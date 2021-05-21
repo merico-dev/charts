@@ -1,0 +1,52 @@
+[
+  {
+    "serie": "RandomSeries-1",
+    "value": 1120,
+    "name": "RandomSeriesName-1"
+  },
+  {
+    "serie": "RandomSeries-2",
+    "value": 90,
+    "name": "RandomSeriesName-2"
+  },
+  {
+    "serie": "RandomSeries-3",
+    "value": 166.85849952516617,
+    "name": "RandomSeriesName-3"
+  },
+  {
+    "serie": "RandomSeries-4",
+    "value": 330,
+    "name": "RandomSeriesName-4"
+  },
+  {
+    "serie": "RandomSeries-5",
+    "value": 799.134234,
+    "name": "RandomSeriesName-5"
+  },
+  {
+    "serie": "RandomSeries-6",
+    "value": 1405.6153846153845,
+    "name": "RandomSeriesName-6"
+  },
+  {
+    "serie": "RandomSeries-7",
+    "value": 600.6542,
+    "name": "RandomSeriesName-7"
+  },
+  {
+    "serie": "RandomSeries-8",
+    "value": 281.0542,
+    "name": "RandomSeriesName-8"
+  },
+  {
+    "serie": "RandomSeries-9",
+    "value": 96.11111111111111,
+    "name": "RandomSeriesName-9"
+  },
+  {
+    "serie": "RandomSeries-10",
+    "value": 0,
+    "name": "RandomSeriesName-10"
+  }
+]

@@ -1,0 +1,15 @@
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime-corejs2/helpers/interopRequireDefault");
+
+var _react = require("@storybook/react");
+
+var _stories = _interopRequireDefault(require("./stories"));
+
+// @ts-expect-error ts-migrate(2554) FIXME: Expected 2 arguments, but got 1.
+var s = (0, _react.storiesOf)('Charts/Bubble/Bubble'); // @ts-expect-error ts-migrate(2339) FIXME: Property 'parameters' does not exist on type 'type... Remove this comment to see the full error message
+
+_stories["default"].forEach(function (story) {
+  return s.add(story.name, story.content, story.parameters);
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uL3NyYy9jb21wb25lbnRzL2NoYXJ0cy9idWJibGUtY2hhcnRzL2J1YmJsZS1jaGFydC9zdG9yeWJvb2sudHMiXSwibmFtZXMiOlsicyIsInN0b3JpZXMiLCJmb3JFYWNoIiwic3RvcnkiLCJhZGQiLCJuYW1lIiwiY29udGVudCIsInBhcmFtZXRlcnMiXSwibWFwcGluZ3MiOiI7Ozs7QUFBQTs7QUFDQTs7QUFFQTtBQUNBLElBQU1BLENBQUMsR0FBRyxzQkFBVSxzQkFBVixDQUFWLEMsQ0FDQTs7QUFDQUMsb0JBQVFDLE9BQVIsQ0FBZ0IsVUFBQ0MsS0FBRDtBQUFBLFNBQVdILENBQUMsQ0FBQ0ksR0FBRixDQUFNRCxLQUFLLENBQUNFLElBQVosRUFBa0JGLEtBQUssQ0FBQ0csT0FBeEIsRUFBaUNILEtBQUssQ0FBQ0ksVUFBdkMsQ0FBWDtBQUFBLENBQWhCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgc3Rvcmllc09mIH0gZnJvbSAnQHN0b3J5Ym9vay9yZWFjdCc7XG5pbXBvcnQgc3RvcmllcyBmcm9tICcuL3N0b3JpZXMnO1xuXG4vLyBAdHMtZXhwZWN0LWVycm9yIHRzLW1pZ3JhdGUoMjU1NCkgRklYTUU6IEV4cGVjdGVkIDIgYXJndW1lbnRzLCBidXQgZ290IDEuXG5jb25zdCBzID0gc3Rvcmllc09mKCdDaGFydHMvQnViYmxlL0J1YmJsZScpO1xuLy8gQHRzLWV4cGVjdC1lcnJvciB0cy1taWdyYXRlKDIzMzkpIEZJWE1FOiBQcm9wZXJ0eSAncGFyYW1ldGVycycgZG9lcyBub3QgZXhpc3Qgb24gdHlwZSAndHlwZS4uLiBSZW1vdmUgdGhpcyBjb21tZW50IHRvIHNlZSB0aGUgZnVsbCBlcnJvciBtZXNzYWdlXG5zdG9yaWVzLmZvckVhY2goKHN0b3J5KSA9PiBzLmFkZChzdG9yeS5uYW1lLCBzdG9yeS5jb250ZW50LCBzdG9yeS5wYXJhbWV0ZXJzKSk7XG4iXX0=

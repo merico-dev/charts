@@ -1,0 +1,15 @@
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime-corejs2/helpers/interopRequireDefault");
+
+var _react = require("@storybook/react");
+
+var _stories = _interopRequireDefault(require("./stories"));
+
+// @ts-expect-error ts-migrate(2554) FIXME: Expected 2 arguments, but got 1.
+var s = (0, _react.storiesOf)('Charts/Composed/Series'); // @ts-expect-error ts-migrate(2339) FIXME: Property 'parameters' does not exist on type 'type... Remove this comment to see the full error message
+
+_stories["default"].forEach(function (story) {
+  return s.add(story.name, story.content, story.parameters);
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uL3NyYy9jb21wb25lbnRzL2NoYXJ0cy9jb21wb3NlZC1jaGFydHMvc2VyaWVzLWNvbXBvc2VkLWNoYXJ0L3N0b3J5Ym9vay50cyJdLCJuYW1lcyI6WyJzIiwic3RvcmllcyIsImZvckVhY2giLCJzdG9yeSIsImFkZCIsIm5hbWUiLCJjb250ZW50IiwicGFyYW1ldGVycyJdLCJtYXBwaW5ncyI6Ijs7OztBQUFBOztBQUNBOztBQUVBO0FBQ0EsSUFBTUEsQ0FBQyxHQUFHLHNCQUFVLHdCQUFWLENBQVYsQyxDQUNBOztBQUNBQyxvQkFBUUMsT0FBUixDQUFnQixVQUFDQyxLQUFEO0FBQUEsU0FBV0gsQ0FBQyxDQUFDSSxHQUFGLENBQU1ELEtBQUssQ0FBQ0UsSUFBWixFQUFrQkYsS0FBSyxDQUFDRyxPQUF4QixFQUFpQ0gsS0FBSyxDQUFDSSxVQUF2QyxDQUFYO0FBQUEsQ0FBaEIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBzdG9yaWVzT2YgfSBmcm9tICdAc3Rvcnlib29rL3JlYWN0JztcbmltcG9ydCBzdG9yaWVzIGZyb20gJy4vc3Rvcmllcyc7XG5cbi8vIEB0cy1leHBlY3QtZXJyb3IgdHMtbWlncmF0ZSgyNTU0KSBGSVhNRTogRXhwZWN0ZWQgMiBhcmd1bWVudHMsIGJ1dCBnb3QgMS5cbmNvbnN0IHMgPSBzdG9yaWVzT2YoJ0NoYXJ0cy9Db21wb3NlZC9TZXJpZXMnKTtcbi8vIEB0cy1leHBlY3QtZXJyb3IgdHMtbWlncmF0ZSgyMzM5KSBGSVhNRTogUHJvcGVydHkgJ3BhcmFtZXRlcnMnIGRvZXMgbm90IGV4aXN0IG9uIHR5cGUgJ3R5cGUuLi4gUmVtb3ZlIHRoaXMgY29tbWVudCB0byBzZWUgdGhlIGZ1bGwgZXJyb3IgbWVzc2FnZVxuc3Rvcmllcy5mb3JFYWNoKChzdG9yeSkgPT4gcy5hZGQoc3RvcnkubmFtZSwgc3RvcnkuY29udGVudCwgc3RvcnkucGFyYW1ldGVycykpO1xuIl19

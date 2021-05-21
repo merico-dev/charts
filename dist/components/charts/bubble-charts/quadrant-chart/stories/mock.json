@@ -1,0 +1,21 @@
+[
+  { "key": "randomID1", "name": "Random Name 1", "avg": 0, "cv": 0, "standardDeviation": 0, "size": 20 },
+  { "key": "randomID2", "name": "Random Name 2", "avg": 0, "cv": 0, "standardDeviation": 0, "size": 20 },
+  { "key": "randomID3", "name": "Random Name 3", "avg": 0, "cv": 0, "standardDeviation": 0, "size": 20 },
+  {
+    "key": "randomID4",
+    "name": "Random Name 4",
+    "avg": 11.78,
+    "cv": 3.04,
+    "standardDeviation": 35.86640891132599,
+    "size": 20
+  },
+  {
+    "key": "randomID5",
+    "name": "Random Name 5",
+    "avg": 204.24,
+    "cv": 4.02,
+    "standardDeviation": 821.3328066051788,
+    "size": 20
+  }
+]

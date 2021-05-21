@@ -1,0 +1,32 @@
+[
+  {
+    "key": "asia",
+    "name": "Asia",
+    "low": 30,
+    "q1": 39,
+    "median": 46,
+    "q3": 52,
+    "high": 60,
+    "outliers": [12]
+  },
+  {
+    "key": "europe",
+    "name": "Europe",
+    "low": 1,
+    "q1": 5,
+    "median": 8,
+    "q3": 12,
+    "high": 16,
+    "outliers": [60]
+  },
+  {
+    "key": "america",
+    "name": "America",
+    "low": 5,
+    "q1": 8,
+    "median": 12,
+    "q3": 19,
+    "high": 26,
+    "outliers": [75, 81, 88, 96]
+  }
+]

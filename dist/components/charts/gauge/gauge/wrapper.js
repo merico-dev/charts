@@ -1,0 +1,72 @@
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime-corejs2/helpers/interopRequireDefault");
+
+var _Object$defineProperty = require("@babel/runtime-corejs2/core-js/object/define-property");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports["default"] = GaugeWrapper;
+
+var _extends2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/extends"));
+
+var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/objectWithoutProperties"));
+
+var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _component = _interopRequireDefault(require("./component"));
+
+var _valueLabel = _interopRequireDefault(require("./value-label"));
+
+var GaugeContainer = (0, _styledBase["default"])("div", {
+  target: "ezywxkj0",
+  label: "GaugeContainer"
+})( // @ts-expect-error ts-migrate(2339) FIXME: Property 'width' does not exist on type 'Pick<Deta... Remove this comment to see the full error message
+function (_ref) {
+  var width = _ref.width,
+      height = _ref.height;
+  return "\n  width: ".concat(width, "px;\n  height: ").concat(height, "px;\n");
+}, process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uL3NyYy9jb21wb25lbnRzL2NoYXJ0cy9nYXVnZS9nYXVnZS93cmFwcGVyLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFLdUIiLCJmaWxlIjoiLi4vLi4vLi4vLi4vLi4vc3JjL2NvbXBvbmVudHMvY2hhcnRzL2dhdWdlL2dhdWdlL3dyYXBwZXIudHN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHN0eWxlZCBmcm9tICdAZW1vdGlvbi9zdHlsZWQnO1xuaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCBHYXVnZSBmcm9tICcuL2NvbXBvbmVudCc7XG5pbXBvcnQgVmFsdWVMYWJlbCBmcm9tICcuL3ZhbHVlLWxhYmVsJztcblxuY29uc3QgR2F1Z2VDb250YWluZXIgPSBzdHlsZWQuZGl2KFxuICAvLyBAdHMtZXhwZWN0LWVycm9yIHRzLW1pZ3JhdGUoMjMzOSkgRklYTUU6IFByb3BlcnR5ICd3aWR0aCcgZG9lcyBub3QgZXhpc3Qgb24gdHlwZSAnUGljazxEZXRhLi4uIFJlbW92ZSB0aGlzIGNvbW1lbnQgdG8gc2VlIHRoZSBmdWxsIGVycm9yIG1lc3NhZ2VcbiAgKHsgd2lkdGgsIGhlaWdodCB9KSA9PiBgXG4gIHdpZHRoOiAke3dpZHRofXB4O1xuICBoZWlnaHQ6ICR7aGVpZ2h0fXB4O1xuYFxuKTtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gR2F1Z2VXcmFwcGVyKHByb3BzOiBhbnkpIHtcbiAgY29uc3QgeyB2YWx1ZSwgY29uZmlndXJhdGlvbnMgLyogZW1wdHlDb250ZW50ICovIH0gPSBwcm9wcztcbiAgaWYgKCFjb25maWd1cmF0aW9ucykge1xuICAgIHRocm93IG5ldyBFcnJvcignW0dhdWdlXSBtaXNzaW5nIHByb3A6IGNvbmZpZ3VyYXRpb25zJyk7XG4gIH1cblxuICBjb25zdCB7XG4gICAgd2lkdGggPSAzNjAsXG4gICAgaGVpZ2h0ID0gMjAwLFxuICAgIHJlbmRlclZhbHVlTGFiZWwsXG4gICAgc2VnbWVudHMsXG4gICAgc2VnbWVudExhYmVscyA9IFtdLFxuICAgIGNvbG9ycyxcbiAgICAuLi5nYXVnZUNvbmZpZ3VyYXRpb25zXG4gIH0gPSBjb25maWd1cmF0aW9ucztcblxuICBjb25zdCBjb21tb25Db25maWd1cmF0aW9ucyA9IHtcbiAgICBzZWdtZW50cyxcbiAgICBzZWdtZW50TGFiZWxzLFxuICAgIGNvbG9ycyxcbiAgfTtcblxuICByZXR1cm4gKFxuICAgIC8vIEB0cy1leHBlY3QtZXJyb3IgdHMtbWlncmF0ZSgyMzIyKSBGSVhNRTogVHlwZSAneyBjaGlsZHJlbjogRWxlbWVudFtdOyB3aWR0aDogYW55OyBoZWlnaHQ6IGEuLi4gUmVtb3ZlIHRoaXMgY29tbWVudCB0byBzZWUgdGhlIGZ1bGwgZXJyb3IgbWVzc2FnZVxuICAgIDxHYXVnZUNvbnRhaW5lciB3aWR0aD17d2lkdGh9IGhlaWdodD17aGVpZ2h0fT5cbiAgICAgIDxHYXVnZSB2YWx1ZT17dmFsdWV9IHsuLi5jb21tb25Db25maWd1cmF0aW9uc30gey4uLmdhdWdlQ29uZmlndXJhdGlvbnN9IC8+XG4gICAgICA8VmFsdWVMYWJlbCB2YWx1ZT17dmFsdWV9IHJlbmRlclZhbHVlTGFiZWw9e3JlbmRlclZhbHVlTGFiZWx9IHsuLi5jb21tb25Db25maWd1cmF0aW9uc30gLz5cbiAgICA8L0dhdWdlQ29udGFpbmVyPlxuICApO1xufVxuIl19 */");
+
+function GaugeWrapper(props) {
+  var value = props.value,
+      configurations = props.configurations;
+
+  if (!configurations) {
+    throw new Error('[Gauge] missing prop: configurations');
+  }
+
+  var _configurations$width = configurations.width,
+      width = _configurations$width === void 0 ? 360 : _configurations$width,
+      _configurations$heigh = configurations.height,
+      height = _configurations$heigh === void 0 ? 200 : _configurations$heigh,
+      renderValueLabel = configurations.renderValueLabel,
+      segments = configurations.segments,
+      _configurations$segme = configurations.segmentLabels,
+      segmentLabels = _configurations$segme === void 0 ? [] : _configurations$segme,
+      colors = configurations.colors,
+      gaugeConfigurations = (0, _objectWithoutProperties2["default"])(configurations, ["width", "height", "renderValueLabel", "segments", "segmentLabels", "colors"]);
+  var commonConfigurations = {
+    segments: segments,
+    segmentLabels: segmentLabels,
+    colors: colors
+  };
+  return (
+    /*#__PURE__*/
+    // @ts-expect-error ts-migrate(2322) FIXME: Type '{ children: Element[]; width: any; height: a... Remove this comment to see the full error message
+    _react["default"].createElement(GaugeContainer, {
+      width: width,
+      height: height
+    }, /*#__PURE__*/_react["default"].createElement(_component["default"], (0, _extends2["default"])({
+      value: value
+    }, commonConfigurations, gaugeConfigurations)), /*#__PURE__*/_react["default"].createElement(_valueLabel["default"], (0, _extends2["default"])({
+      value: value,
+      renderValueLabel: renderValueLabel
+    }, commonConfigurations)))
+  );
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uL3NyYy9jb21wb25lbnRzL2NoYXJ0cy9nYXVnZS9nYXVnZS93cmFwcGVyLnRzeCJdLCJuYW1lcyI6WyJHYXVnZUNvbnRhaW5lciIsIndpZHRoIiwiaGVpZ2h0IiwiR2F1Z2VXcmFwcGVyIiwicHJvcHMiLCJ2YWx1ZSIsImNvbmZpZ3VyYXRpb25zIiwiRXJyb3IiLCJyZW5kZXJWYWx1ZUxhYmVsIiwic2VnbWVudHMiLCJzZWdtZW50TGFiZWxzIiwiY29sb3JzIiwiZ2F1Z2VDb25maWd1cmF0aW9ucyIsImNvbW1vbkNvbmZpZ3VyYXRpb25zIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFDQTs7QUFDQTs7QUFDQTs7QUFFQSxJQUFNQSxjQUFjLEdBQUc7QUFBQTtBQUFBO0FBQUEsSUFDckI7QUFDQTtBQUFBLE1BQUdDLEtBQUgsUUFBR0EsS0FBSDtBQUFBLE1BQVVDLE1BQVYsUUFBVUEsTUFBVjtBQUFBLDhCQUNTRCxLQURULDRCQUVVQyxNQUZWO0FBQUEsQ0FGcUIsNm1FQUF2Qjs7QUFRZSxTQUFTQyxZQUFULENBQXNCQyxLQUF0QixFQUFrQztBQUFBLE1BQ3ZDQyxLQUR1QyxHQUNNRCxLQUROLENBQ3ZDQyxLQUR1QztBQUFBLE1BQ2hDQyxjQURnQyxHQUNNRixLQUROLENBQ2hDRSxjQURnQzs7QUFFL0MsTUFBSSxDQUFDQSxjQUFMLEVBQXFCO0FBQ25CLFVBQU0sSUFBSUMsS0FBSixDQUFVLHNDQUFWLENBQU47QUFDRDs7QUFKOEMsOEJBYzNDRCxjQWQyQyxDQU83Q0wsS0FQNkM7QUFBQSxNQU83Q0EsS0FQNkMsc0NBT3JDLEdBUHFDO0FBQUEsOEJBYzNDSyxjQWQyQyxDQVE3Q0osTUFSNkM7QUFBQSxNQVE3Q0EsTUFSNkMsc0NBUXBDLEdBUm9DO0FBQUEsTUFTN0NNLGdCQVQ2QyxHQWMzQ0YsY0FkMkMsQ0FTN0NFLGdCQVQ2QztBQUFBLE1BVTdDQyxRQVY2QyxHQWMzQ0gsY0FkMkMsQ0FVN0NHLFFBVjZDO0FBQUEsOEJBYzNDSCxjQWQyQyxDQVc3Q0ksYUFYNkM7QUFBQSxNQVc3Q0EsYUFYNkMsc0NBVzdCLEVBWDZCO0FBQUEsTUFZN0NDLE1BWjZDLEdBYzNDTCxjQWQyQyxDQVk3Q0ssTUFaNkM7QUFBQSxNQWExQ0MsbUJBYjBDLDZDQWMzQ04sY0FkMkM7QUFnQi9DLE1BQU1PLG9CQUFvQixHQUFHO0FBQzNCSixJQUFBQSxRQUFRLEVBQVJBLFFBRDJCO0FBRTNCQyxJQUFBQSxhQUFhLEVBQWJBLGFBRjJCO0FBRzNCQyxJQUFBQSxNQUFNLEVBQU5BO0FBSDJCLEdBQTdCO0FBTUE7QUFBQTtBQUNFO0FBQ0Esb0NBQUMsY0FBRDtBQUFnQixNQUFBLEtBQUssRUFBRVYsS0FBdkI7QUFBOEIsTUFBQSxNQUFNLEVBQUVDO0FBQXRDLG9CQUNFLGdDQUFDLHFCQUFEO0FBQU8sTUFBQSxLQUFLLEVBQUVHO0FBQWQsT0FBeUJRLG9CQUF6QixFQUFtREQsbUJBQW5ELEVBREYsZUFFRSxnQ0FBQyxzQkFBRDtBQUFZLE1BQUEsS0FBSyxFQUFFUCxLQUFuQjtBQUEwQixNQUFBLGdCQUFnQixFQUFFRztBQUE1QyxPQUFrRUssb0JBQWxFLEVBRkY7QUFGRjtBQU9EIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHN0eWxlZCBmcm9tICdAZW1vdGlvbi9zdHlsZWQnO1xuaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCBHYXVnZSBmcm9tICcuL2NvbXBvbmVudCc7XG5pbXBvcnQgVmFsdWVMYWJlbCBmcm9tICcuL3ZhbHVlLWxhYmVsJztcblxuY29uc3QgR2F1Z2VDb250YWluZXIgPSBzdHlsZWQuZGl2KFxuICAvLyBAdHMtZXhwZWN0LWVycm9yIHRzLW1pZ3JhdGUoMjMzOSkgRklYTUU6IFByb3BlcnR5ICd3aWR0aCcgZG9lcyBub3QgZXhpc3Qgb24gdHlwZSAnUGljazxEZXRhLi4uIFJlbW92ZSB0aGlzIGNvbW1lbnQgdG8gc2VlIHRoZSBmdWxsIGVycm9yIG1lc3NhZ2VcbiAgKHsgd2lkdGgsIGhlaWdodCB9KSA9PiBgXG4gIHdpZHRoOiAke3dpZHRofXB4O1xuICBoZWlnaHQ6ICR7aGVpZ2h0fXB4O1xuYFxuKTtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gR2F1Z2VXcmFwcGVyKHByb3BzOiBhbnkpIHtcbiAgY29uc3QgeyB2YWx1ZSwgY29uZmlndXJhdGlvbnMgLyogZW1wdHlDb250ZW50ICovIH0gPSBwcm9wcztcbiAgaWYgKCFjb25maWd1cmF0aW9ucykge1xuICAgIHRocm93IG5ldyBFcnJvcignW0dhdWdlXSBtaXNzaW5nIHByb3A6IGNvbmZpZ3VyYXRpb25zJyk7XG4gIH1cblxuICBjb25zdCB7XG4gICAgd2lkdGggPSAzNjAsXG4gICAgaGVpZ2h0ID0gMjAwLFxuICAgIHJlbmRlclZhbHVlTGFiZWwsXG4gICAgc2VnbWVudHMsXG4gICAgc2VnbWVudExhYmVscyA9IFtdLFxuICAgIGNvbG9ycyxcbiAgICAuLi5nYXVnZUNvbmZpZ3VyYXRpb25zXG4gIH0gPSBjb25maWd1cmF0aW9ucztcblxuICBjb25zdCBjb21tb25Db25maWd1cmF0aW9ucyA9IHtcbiAgICBzZWdtZW50cyxcbiAgICBzZWdtZW50TGFiZWxzLFxuICAgIGNvbG9ycyxcbiAgfTtcblxuICByZXR1cm4gKFxuICAgIC8vIEB0cy1leHBlY3QtZXJyb3IgdHMtbWlncmF0ZSgyMzIyKSBGSVhNRTogVHlwZSAneyBjaGlsZHJlbjogRWxlbWVudFtdOyB3aWR0aDogYW55OyBoZWlnaHQ6IGEuLi4gUmVtb3ZlIHRoaXMgY29tbWVudCB0byBzZWUgdGhlIGZ1bGwgZXJyb3IgbWVzc2FnZVxuICAgIDxHYXVnZUNvbnRhaW5lciB3aWR0aD17d2lkdGh9IGhlaWdodD17aGVpZ2h0fT5cbiAgICAgIDxHYXVnZSB2YWx1ZT17dmFsdWV9IHsuLi5jb21tb25Db25maWd1cmF0aW9uc30gey4uLmdhdWdlQ29uZmlndXJhdGlvbnN9IC8+XG4gICAgICA8VmFsdWVMYWJlbCB2YWx1ZT17dmFsdWV9IHJlbmRlclZhbHVlTGFiZWw9e3JlbmRlclZhbHVlTGFiZWx9IHsuLi5jb21tb25Db25maWd1cmF0aW9uc30gLz5cbiAgICA8L0dhdWdlQ29udGFpbmVyPlxuICApO1xufVxuIl19

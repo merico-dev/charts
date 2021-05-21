@@ -1,0 +1,15 @@
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime-corejs2/helpers/interopRequireDefault");
+
+var _react = require("@storybook/react");
+
+var _stories = _interopRequireDefault(require("./stories"));
+
+// @ts-expect-error ts-migrate(2554) FIXME: Expected 2 arguments, but got 1.
+var s = (0, _react.storiesOf)('Base/Scrollable');
+
+_stories["default"].forEach(function (story) {
+  return s.add(story.name, story.content);
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uL3NyYy9jb21wb25lbnRzL2NoYXJ0cy9iYXNlL3Njcm9sbGFibGUvc3Rvcnlib29rLnRzIl0sIm5hbWVzIjpbInMiLCJzdG9yaWVzIiwiZm9yRWFjaCIsInN0b3J5IiwiYWRkIiwibmFtZSIsImNvbnRlbnQiXSwibWFwcGluZ3MiOiI7Ozs7QUFBQTs7QUFDQTs7QUFFQTtBQUNBLElBQU1BLENBQUMsR0FBRyxzQkFBVSxpQkFBVixDQUFWOztBQUNBQyxvQkFBUUMsT0FBUixDQUFnQixVQUFDQyxLQUFEO0FBQUEsU0FBV0gsQ0FBQyxDQUFDSSxHQUFGLENBQU1ELEtBQUssQ0FBQ0UsSUFBWixFQUFrQkYsS0FBSyxDQUFDRyxPQUF4QixDQUFYO0FBQUEsQ0FBaEIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBzdG9yaWVzT2YgfSBmcm9tICdAc3Rvcnlib29rL3JlYWN0JztcbmltcG9ydCBzdG9yaWVzIGZyb20gJy4vc3Rvcmllcyc7XG5cbi8vIEB0cy1leHBlY3QtZXJyb3IgdHMtbWlncmF0ZSgyNTU0KSBGSVhNRTogRXhwZWN0ZWQgMiBhcmd1bWVudHMsIGJ1dCBnb3QgMS5cbmNvbnN0IHMgPSBzdG9yaWVzT2YoJ0Jhc2UvU2Nyb2xsYWJsZScpO1xuc3Rvcmllcy5mb3JFYWNoKChzdG9yeSkgPT4gcy5hZGQoc3RvcnkubmFtZSwgc3RvcnkuY29udGVudCkpO1xuIl19

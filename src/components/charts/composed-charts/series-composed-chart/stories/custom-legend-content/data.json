@@ -1,0 +1,9 @@
+[
+  { "name": "Page A", "uv": 4000, "human-female": 2400, "human-male": 2400 },
+  { "name": "Page B", "uv": 3000, "human-female": 1398, "human-male": 2210 },
+  { "name": "Page C", "uv": 2000, "human-female": 9800, "human-male": 2290 },
+  { "name": "Page D", "uv": 2780, "human-female": 3908, "human-male": 2000 },
+  { "name": "Page E", "uv": 1890, "human-female": 4800, "human-male": 2181 },
+  { "name": "Page F", "uv": 2390, "human-female": 3800, "human-male": 2500 },
+  { "name": "Page G", "uv": 3490, "human-female": 4300, "human-male": 2100 }
+]

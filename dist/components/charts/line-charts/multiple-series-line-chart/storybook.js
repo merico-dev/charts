@@ -1,0 +1,15 @@
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime-corejs2/helpers/interopRequireDefault");
+
+var _react = require("@storybook/react");
+
+var _stories = _interopRequireDefault(require("./stories"));
+
+// @ts-expect-error ts-migrate(2554) FIXME: Expected 2 arguments, but got 1.
+var s = (0, _react.storiesOf)('Charts/Line/Multiple Series'); // @ts-expect-error ts-migrate(2345) FIXME: Argument of type '(({ connectNulls, fillXAxisGaps ... Remove this comment to see the full error message
+
+_stories["default"].forEach(function (story) {
+  return s.add(story.name, story.content, story.parameters);
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uL3NyYy9jb21wb25lbnRzL2NoYXJ0cy9saW5lLWNoYXJ0cy9tdWx0aXBsZS1zZXJpZXMtbGluZS1jaGFydC9zdG9yeWJvb2sudHMiXSwibmFtZXMiOlsicyIsInN0b3JpZXMiLCJmb3JFYWNoIiwic3RvcnkiLCJhZGQiLCJuYW1lIiwiY29udGVudCIsInBhcmFtZXRlcnMiXSwibWFwcGluZ3MiOiI7Ozs7QUFBQTs7QUFDQTs7QUFFQTtBQUNBLElBQU1BLENBQUMsR0FBRyxzQkFBVSw2QkFBVixDQUFWLEMsQ0FDQTs7QUFDQUMsb0JBQVFDLE9BQVIsQ0FBZ0IsVUFBQ0MsS0FBRDtBQUFBLFNBQVdILENBQUMsQ0FBQ0ksR0FBRixDQUFNRCxLQUFLLENBQUNFLElBQVosRUFBa0JGLEtBQUssQ0FBQ0csT0FBeEIsRUFBaUNILEtBQUssQ0FBQ0ksVUFBdkMsQ0FBWDtBQUFBLENBQWhCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgc3Rvcmllc09mIH0gZnJvbSAnQHN0b3J5Ym9vay9yZWFjdCc7XG5pbXBvcnQgc3RvcmllcyBmcm9tICcuL3N0b3JpZXMnO1xuXG4vLyBAdHMtZXhwZWN0LWVycm9yIHRzLW1pZ3JhdGUoMjU1NCkgRklYTUU6IEV4cGVjdGVkIDIgYXJndW1lbnRzLCBidXQgZ290IDEuXG5jb25zdCBzID0gc3Rvcmllc09mKCdDaGFydHMvTGluZS9NdWx0aXBsZSBTZXJpZXMnKTtcbi8vIEB0cy1leHBlY3QtZXJyb3IgdHMtbWlncmF0ZSgyMzQ1KSBGSVhNRTogQXJndW1lbnQgb2YgdHlwZSAnKCh7IGNvbm5lY3ROdWxscywgZmlsbFhBeGlzR2FwcyAuLi4gUmVtb3ZlIHRoaXMgY29tbWVudCB0byBzZWUgdGhlIGZ1bGwgZXJyb3IgbWVzc2FnZVxuc3Rvcmllcy5mb3JFYWNoKChzdG9yeSkgPT4gcy5hZGQoc3RvcnkubmFtZSwgc3RvcnkuY29udGVudCwgc3RvcnkucGFyYW1ldGVycykpO1xuIl19

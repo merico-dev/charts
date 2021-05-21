@@ -1,0 +1,11 @@
+[
+  { "key": "m1-1", "name": "Series Name 1", "metric": "metric-a", "metricName": "Metric A", "value": 0.6 },
+  { "key": "m1-2", "name": "Series Name 1", "metric": "metric-b", "metricName": "Metric B", "value": 0.5 },
+  { "key": "m1-3", "name": "Series Name 1", "metric": "metric-c", "metricName": "Metric C", "value": 0.8 },
+  { "key": "m1-4", "name": "Series Name 1", "metric": "metric-d", "metricName": "Metric D", "value": 0.2 },
+
+  { "key": "m2-1", "name": "Series Name 2", "metric": "metric-a", "metricName": "Metric A", "value": 0.1 },
+  { "key": "m2-2", "name": "Series Name 2", "metric": "metric-b", "metricName": "Metric B", "value": 0.3 },
+  { "key": "m2-3", "name": "Series Name 2", "metric": "metric-c", "metricName": "Metric C", "value": 0.3 },
+  { "key": "m2-4", "name": "Series Name 2", "metric": "metric-d", "metricName": "Metric D", "value": 0.9 }
+]

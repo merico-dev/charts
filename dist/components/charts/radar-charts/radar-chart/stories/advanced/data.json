@@ -1,0 +1,30 @@
+[
+  {
+    "value": 0.38,
+    "name": "行业中位",
+    "metric": "static_test_coverage",
+    "metricName": "测试覆盖度",
+    "isSubject": false
+  },
+  {
+    "value": 0.17696676131618508,
+    "name": "Merico",
+    "metric": "static_test_coverage",
+    "metricName": "测试覆盖度",
+    "isSubject": true
+  },
+  { "value": 0.23, "name": "行业中位", "metric": "doc_coverage", "metricName": "注释覆盖度", "isSubject": false },
+  {
+    "value": 0.1585999453103637,
+    "name": "Merico",
+    "metric": "doc_coverage",
+    "metricName": "注释覆盖度",
+    "isSubject": true
+  },
+  { "value": 0.61, "name": "行业中位", "metric": "dryness", "metricName": "代码复用度", "isSubject": false },
+  { "value": 0.8946540880503144, "name": "Merico", "metric": "dryness", "metricName": "代码复用度", "isSubject": true },
+  { "value": 0.48, "name": "行业中位", "metric": "modularity", "metricName": "模块性", "isSubject": false },
+  { "value": 0.5657783631938453, "name": "Merico", "metric": "modularity", "metricName": "模块性", "isSubject": true },
+  { "value": 0.01, "name": "行业中位", "metric": "issue_rate", "metricName": "问题率", "isSubject": false },
+  { "value": 0.9142739950779327, "name": "Merico", "metric": "issue_rate", "metricName": "问题率", "isSubject": true }
+]

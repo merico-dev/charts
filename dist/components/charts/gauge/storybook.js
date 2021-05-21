@@ -1,0 +1,15 @@
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime-corejs2/helpers/interopRequireDefault");
+
+var _react = require("@storybook/react");
+
+var _stories = _interopRequireDefault(require("./stories"));
+
+// @ts-expect-error ts-migrate(2554) FIXME: Expected 2 arguments, but got 1.
+var s = (0, _react.storiesOf)('Charts/Gauge');
+
+_stories["default"].forEach(function (story) {
+  return s.add(story.name, story.content, story.parameters);
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NyYy9jb21wb25lbnRzL2NoYXJ0cy9nYXVnZS9zdG9yeWJvb2sudHMiXSwibmFtZXMiOlsicyIsInN0b3JpZXMiLCJmb3JFYWNoIiwic3RvcnkiLCJhZGQiLCJuYW1lIiwiY29udGVudCIsInBhcmFtZXRlcnMiXSwibWFwcGluZ3MiOiI7Ozs7QUFBQTs7QUFDQTs7QUFFQTtBQUNBLElBQU1BLENBQUMsR0FBRyxzQkFBVSxjQUFWLENBQVY7O0FBQ0FDLG9CQUFRQyxPQUFSLENBQWdCLFVBQUNDLEtBQUQ7QUFBQSxTQUFXSCxDQUFDLENBQUNJLEdBQUYsQ0FBTUQsS0FBSyxDQUFDRSxJQUFaLEVBQWtCRixLQUFLLENBQUNHLE9BQXhCLEVBQWlDSCxLQUFLLENBQUNJLFVBQXZDLENBQVg7QUFBQSxDQUFoQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHN0b3JpZXNPZiB9IGZyb20gJ0BzdG9yeWJvb2svcmVhY3QnO1xuaW1wb3J0IHN0b3JpZXMgZnJvbSAnLi9zdG9yaWVzJztcblxuLy8gQHRzLWV4cGVjdC1lcnJvciB0cy1taWdyYXRlKDI1NTQpIEZJWE1FOiBFeHBlY3RlZCAyIGFyZ3VtZW50cywgYnV0IGdvdCAxLlxuY29uc3QgcyA9IHN0b3JpZXNPZignQ2hhcnRzL0dhdWdlJyk7XG5zdG9yaWVzLmZvckVhY2goKHN0b3J5KSA9PiBzLmFkZChzdG9yeS5uYW1lLCBzdG9yeS5jb250ZW50LCBzdG9yeS5wYXJhbWV0ZXJzKSk7XG4iXX0=
